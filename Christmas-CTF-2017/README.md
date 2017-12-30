@@ -1,4 +1,4 @@
-# x-mas-ctf-2017 (1st) (이거 라업아님)
+# x-mas-ctf-2017 (1st)
 
 
 #### session-parser.py
