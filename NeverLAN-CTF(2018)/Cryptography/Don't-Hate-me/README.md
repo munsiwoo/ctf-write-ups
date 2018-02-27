@@ -2,8 +2,11 @@
 
 
 첫번째 힌트로 압축파일의 비밀번호를 알 수 있었다.
+
 그리고 춤추는 졸라맨이 가득한 사진을 볼 수 있는데
+
 이건 텐달러 CTF에서 한번 풀어봤던 Dancing men ciper다.
+
 (https://www.dcode.fr/dancing-men-cipher)
 
 
@@ -33,6 +36,10 @@ kjhtcriwruodhcvcxnhddhckcjniuiccppzckwkwecxffqbnrgjwzdgwgyovofmnobdrhcqjasxowcpl
 
 kztgkzupmtjzefeqzmugwtxzfumeeeuxrhohmnstjbktzdyrasxowcplobdrhcqjgyovofmnrgjwzdgwecxffqbnppzckwkwcjniuiccxnhddhckruodhcvckjhtcriw
 ~~~
+
+비네제르 사이퍼라고 생각해서 이것 저것 시도해봤지만 결국 못풀었다.
+
+
 
 maybe vigenere cipher..
 
