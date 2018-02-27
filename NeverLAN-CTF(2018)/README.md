@@ -5,4 +5,4 @@ My first team ctf solo play challenge :D
 ~~~
 
 
-Review (Korean) : - [Lor Framework](https://github.com/sumory/lor)
+Review (Korean) - [Here](http://blog.withphp.com/post/105)
