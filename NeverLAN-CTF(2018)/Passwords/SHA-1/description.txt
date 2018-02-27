@@ -1,0 +1,9 @@
+Name: SHA-1
+
+Author: bashninja
+
+Description: We found a password that might be useful, but it's currently hashed. Can you crack the hash?
+
+We know the first character is a digit, but that's it.
+
+05d3693c0781227771b97a9e3cf972d44c2d4439
