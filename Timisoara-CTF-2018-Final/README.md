@@ -7,10 +7,10 @@ Written by Siwoo Mun (munsiwoo)
 
 ### SQL Sanity Check (100pts)
 
-It's postgresql injection challenge.  
+SQL Sanity Check is postgresql injection challenge.  
 injection point is `User-Agent` header. (request)  
   
-this is my blind sqli script.
+my blind sqli script ``exploit.py``
 ```python
 from requests import post
 import string
@@ -83,7 +83,7 @@ a piece of cake =)
 
 ### PHP REvival (200pts)
 
-It's php zend engine opcode analyze challenge.  
+PHP REvival is php zend engine opcode analyze challenge.  
 reference : http://php.net/manual/kr/internals2.opcodes.php  
 ```
 function name:  (null)
@@ -175,7 +175,7 @@ function getflag($guess, $flag='*CENSORED_FLAG*'){
 my payload : ``http://89.38.210.129:8091/?g=56123455``
 
 ### YAPS (100pts) - First blood
-It's PHP Jail.  
+YAPS is PHP Jail.  
 flag is in the flag.php  
 ```php
 <?php
