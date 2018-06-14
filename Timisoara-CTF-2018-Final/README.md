@@ -193,4 +193,4 @@ my payload : ``http://89.38.210.129:8095/?k=$a=_G;$a{2}=E;$a{3}=T;${$a}{b}(${$a}
 a piece of cake =)  
   
 ### YAPS2 (350pts)
-It's open_basedir and disable_functions bypass challenge.  
+YAPS2 is open_basedir and disable_functions bypass challenge.  
