@@ -9,7 +9,8 @@ Written by Siwoo Mun (munsiwoo)
 
 It's postgresql injection challenge.  
 injection point is `User-Agent` header. (request)  
-
+  
+this is my blind sqli script.
 ```python
 from requests import post
 import string
