@@ -1,4 +1,4 @@
-# Timisoara CTF Final Web Write-ups
+# Timisoara CTF 2018 Final Web Write-ups
 ~~~
 second place in Timisoara CTF Final (NextLine)
 2018.06.09 - 2018.06.10
