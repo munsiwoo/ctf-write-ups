@@ -268,15 +268,7 @@ if __name__ == '__main__' :
     url = "http://13.209.230.31/admin"
 
     headers = {
-        "Connection": "keep-alive",
-        "Pragma": "no-cache",
-        "Cache-Control": "no-cache",
-        "Upgrade-Insecure-Requests": "1",
         "Content-Type": "multipart/form-data; boundary=----WebKitFormBoundaryUmsB8xWbmldnarAQ",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3",
-        "Accept-Encoding": "gzip, deflate",
-        "Accept-Language": "ko,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-CN;q=0.6,la;q=0.5,und;q=0.4,lb;q=0.3,vi;q=0.2",
         "Cookie": "PHPSESSID=munsiwoo"
     }
 
