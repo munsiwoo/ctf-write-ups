@@ -351,7 +351,7 @@ if __name__ == '__main__' :
     print(result, flush=True)
 ```
 
-![1568689763953](C:\Users\munsiwoo\AppData\Roaming\Typora\typora-user-images\1568689763953.png)
+![flag](flag.png)
 
 
 
